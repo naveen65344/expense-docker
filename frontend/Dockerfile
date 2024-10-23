@@ -1,1 +1,1 @@
-FROM nginx:20
+FROM nginx
