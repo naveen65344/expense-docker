@@ -1,2 +1,2 @@
 FROM nginx
-cpoy . /usr/share/nginx/html/index.html
+copy  code /usr/share/nginx/html/index.html
