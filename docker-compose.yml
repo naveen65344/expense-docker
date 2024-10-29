@@ -1,5 +1,5 @@
 version: "3"
-networks: expense
+networks: expense:
  
 volumes: 
   mysql:
