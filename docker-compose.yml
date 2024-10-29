@@ -13,10 +13,10 @@ services:
   image:  joindevops/backend:v1
   container_name: backend
   depends_on: 
-   - mysql:
+   - mysql
 
  frontend:
   image:  joindevops/backend:v1
   container_name: frontend
   depends_on: 
-  - backend:
+  - backend
