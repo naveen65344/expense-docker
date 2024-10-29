@@ -18,5 +18,5 @@ services:
    image:  backend:v1
    container_name: frontend
    depends_on: 
-    - backend
+   - backend
    
