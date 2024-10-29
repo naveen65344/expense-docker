@@ -5,16 +5,18 @@ volumes:
  mysql:
 services:
  mysql:
-  image:  joindevops/mysql:v1
+  image: mysql:v1
   container_name: mysql
+  volumes: 
+   - mysql:/var/lib/mysql
  backend:
-  image:  joindevops/backend:v1
+  image:  backend:v1
   container_name: backend
   depends_on: 
    - mysql
  frontend:
-   image:  joindevops/backend:v1
+   image:  backend:v1
    container_name: frontend
    depends_on: 
-     backend
+    - backend
    
