@@ -1,7 +1,8 @@
 version: "3"
 networks: 
   expense:
-volumes: mysql
+volumes: 
+  mysql:
 services:
  mysql:
   image: joindevops/mysql:v1
